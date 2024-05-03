@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Resume</title>
+    <link rel="stylesheet" type="text/css" href="virtual_resume.css">
+    <!-- import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div style="flex-grow: 1">
+                <div style="text-align: center;" class="chunk">
+                    <img src="me.jpg" alt="Profile Picture" style="height: 200px">
+                    <h2>Jordan McGlade</h2>
+                    <p>
+                        Email: <a href="mailto:mcglade.8@gmail.com">mcglade.8@gmail.com</a>
+                        <br>Phone: <a href="tel:419-889-1706">419-889-1706</a>
+                        <br><a href="https://www.linkedin.com/in/jordan-mcglade-59a12585/" target="_blank">LinkedIn</a>
+                    </p>
+                </div>
+                <div  class="chunk">
+                    <h2>Tech Skills</h2>
+                    <ul>
+                        <li>
+                            Web Development
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Data Analysis
+                            <ul>
+                                <li>Google Sheets plus Apps Script</li>
+                                <li>R</li>
+                                <li>Python</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chunk">
+                    <h2>Other Skills</h2>
+                    <ul>
+                        <li>Content Creation
+                            <ul>
+                                <li>Atlassian/Confluence Artifacts</li>
+                                <li>Job Aids and Reference Guides</li>
+                                <li>Slide decks, Kahoot, Lessonly</li>
+                            </ul>
+                        </li>
+                        <li>Training and Development
+                            <ul>
+                                <li>Delivery of training content</li>
+                                <li>Post-training evaluation</li>
+                                <li>Cross-training in Upstart's core functions, including:
+                                    <ul>
+                                        <li>Loan Application Review</li>
+                                        <li>Pre- and Post-origination Customer Service</li>
+                                        <li>Collections</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div  class="chunk">
+                    <h2>Personal Projects hosted in Github Pages</h2>
+                    <h4><em>Where a love for fantasy sports meets coding</em></h4>
+                    <ul>
+                        <li>
+                            <a href="https://mcglade8.github.io/MLB/" target="_blank">MLB Project</a>
+                        </li>
+                        <li>
+                            <a href="https://mcglade8.github.io/NBABuilderV2/" target="_blank">NBA Project</a>
+                        </li>
+                        <li>
+                            <a href="https://mcglade8.github.io/Football2023/" target="_blank">NFL Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="flex-grow: 3">
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="chunk">
+                        <img src="osu_logo.png" alt="OSU Logo">
+                        <br>
+                        <strong>The Ohio State University</strong>
+                        <br>
+                        Bachelor of Science in Human Ecology
+                        <br>
+                        2009 to 2014
+                    </div>
+                </div>
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <div class="chunk hoverable" onclick="toggleThis(this)">
+                        <img src="upst_logo.png" alt="Upstart Logo" >
+                        <div>
+                            <h3>Upstart - Learning and Development Specialist  - 2020 to Present</h3>
+                        </div>
+                        <i class="fa fa-angle-down"></i> <strong>Accomplishments</strong>
+                        <div style="display: block;">
+                            <ul>
+                                <li>Developed a sandbox environment, used to train credit analysts on Upstart's systems
+                                    <ul>
+                                        <li>Wrote single-page webapps to match live environments</li>
+                                        <li>Integrated templates to mimic customer interactions</li>
+                                        <li>Presented in a modal dialogue via Google Apps Script in Google Sheets</li>
+                                        <li>User actions are recorded and submitted via the application for a facilitator to review</li>
+                                    </ul>
+                                </li>
+                                <li>Created job aids, reference guides, and procedure documentation</li>
+                                <li>Developed and delivered training to new hires and existing employees</li>
+                                <li>Leveraged subject-matter expertise into a learning and development role which allowed me to pursue my true passion: programming</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chunk hoverable" onclick="toggleThis(this)">
+                        <img src="53_logo.png" alt="Fifth Third Logo">
+                        <div>
+                            <h3>Fifth Third Bank - Capital Markets Specialist - 2015 to 2019 </h3>
+                        </div>
+                        <i class="fa fa-angle-right"></i> <strong>Accomplishments</strong>
+                        <div style="display: none;">
+                            <ul>
+                                <li>Personally processed dozens of foreign currency trades per day</li>
+                                <li>Trained external partners on trade processing software
+                                    <ul>
+                                        <li>5/3 Proprietary Software</li>
+                                        <li>Bloomberg Terminal</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chunk hoverable" onclick="toggleThis(this)">
+                        <img src="huntington_logo.png" alt="Huntington Logo">
+                        <div>
+                            <h3>Huntington National Bank - Universal Banker - 2014 to 2015</h3>
+                        </div>
+                        <i class="fa fa-angle-right"></i> <strong>Accomplishments</strong>
+                        <div style="display: none;">
+                            <ul>
+                                <li>Performed banking services for the new branch in the James cancer hospital located on Ohio State's campus</li>
+                                <li>Processed all types of transactions, including teller work, mortgage and credit card applications, and bank account opening</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chunk hoverable" onclick="toggleThis(this)">
+                        <img src="foresters_logo.jpg" alt="Foresters Logo">
+                        <div>
+                            <h3>First Investors (now Foresters Financial) - Financial Services Representative - 2014</h3>
+                        </div>
+                        <br><i class="fa fa-angle-right"></i> <strong>Accomplishments</strong>
+                        <div style="display: none;">
+                            <ul>
+                                <li>Achieved top scores among my colleagues when achieving insurance, Series 6 and 63 licensing. However...</li>
+                                <li>Became aware that this was not the career path for me</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="virtual_resume.js"></script>
